@@ -6,13 +6,14 @@
     <title>DePIN Review | Data-Driven Hardware Yield Hub</title>
     <style>
         :root {
-            --bg-color: #0b0f19;
-            --card-bg: #151d30;
-            --text-color: #f3f4f6;
-            --accent-green: #10b981;
-            --accent-blue: #3b82f6;
-            --accent-red: #ef4444;
-            --border-color: #1e293b;
+            --bg-color: #ffffff;
+            --card-bg: #f8fafc;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --accent-green: #059669;
+            --accent-blue: #2563eb;
+            --accent-red: #dc2626;
+            --border-color: #e2e8f0;
         }
 
         body {
@@ -27,7 +28,7 @@
         header {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem 2rem 1rem;
             text-align: center;
             border-bottom: 1px solid var(--border-color);
         }
@@ -35,15 +36,13 @@
         h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #3b82f6, #10b981);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #0f172a;
         }
 
         .market-desc {
             max-width: 800px;
             margin: 1.5rem auto;
-            color: #9ca3af;
+            color: var(--text-muted);
             font-size: 1.1rem;
             text-align: center;
         }
@@ -57,11 +56,11 @@
         h2 {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
+            color: #0f172a;
             border-left: 4px solid var(--accent-blue);
             padding-left: 0.5rem;
         }
 
-        /* Asset Environment Grid Setup */
         .env-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -74,26 +73,26 @@
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 1.5rem;
-            transition: transform 0.2s, border-color 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
         .env-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
         .env-title {
             font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
-            color: #fff;
+            color: #0f172a;
         }
 
         .env-desc {
-            color: #9ca3af;
+            color: var(--text-muted);
             font-size: 0.95rem;
             margin-bottom: 1.5rem;
         }
@@ -111,16 +110,14 @@
             transition: background 0.2s;
         }
 
-        .env-btn:hover {
-            background-color: #2563eb;
-        }
+        .env-btn:hover { background-color: #1d4ed8; }
 
-        /* Responsive Table Design */
         .table-container {
             overflow-x: auto;
-            background-color: var(--card-bg);
+            background-color: #fff;
             border: 1px solid var(--border-color);
             border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
             margin-bottom: 2rem;
         }
 
@@ -137,14 +134,12 @@
         }
 
         th {
-            background-color: #1e293b;
-            color: #fff;
+            background-color: #f1f5f9;
+            color: #334155;
             font-weight: 600;
         }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
+        tr:last-child td { border-bottom: none; }
 
         .badge {
             display: inline-block;
@@ -154,9 +149,9 @@
             font-weight: 700;
         }
 
-        .badge-green { background-color: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
-        .badge-blue { background-color: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
-        .badge-red { background-color: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+        .badge-green { background-color: #d1fae5; color: var(--accent-green); }
+        .badge-blue { background-color: #dbeafe; color: var(--accent-blue); }
+        .badge-red { background-color: #fee2e2; color: var(--accent-red); }
 
         .table-link {
             color: var(--accent-blue);
@@ -164,17 +159,16 @@
             font-weight: 600;
         }
 
-        .table-link:hover {
-            text-decoration: underline;
-        }
+        .table-link:hover { text-decoration: underline; }
 
         footer {
             text-align: center;
-            padding: 2rem;
-            color: #4b5563;
+            padding: 3rem;
+            color: var(--text-muted);
             font-size: 0.85rem;
             border-top: 1px solid var(--border-color);
             margin-top: 4rem;
+            background-color: #f8fafc;
         }
     </style>
 </head>
@@ -199,7 +193,7 @@
                     <div class="env-title">💻 Unused Home Internet?</div>
                     <div class="env-desc">Monetize your idle background network bandwidth to feed global AI data pipelines without using extra power.</div>
                 </div>
-                <a href="./grass/" class="env-btn">See Best Setup</a>
+                <a href="./home-internet/" class="env-btn">See Best Setup</a>
             </div>
 
             <div class="env-card">
@@ -212,10 +206,10 @@
 
             <div class="env-card">
                 <div>
-                    <div class="env-title">🏎️ Drive a Lot Everyday?</div>
+                    <div class="env-title">🚗 Drive a Lot Everyday?</div>
                     <div class="env-desc">Earn rewards simply for mapping your daily work commute or road trips using cellular tracking tools.</div>
                 </div>
-                <a href="./helium/" class="env-btn">See Best Setup</a>
+                <a href="./driving/" class="env-btn">See Best Setup</a>
             </div>
 
             <div class="env-card">
@@ -223,7 +217,7 @@
                     <div class="env-title">🎮 PC with a Dedicated GPU?</div>
                     <div class="env-desc">Rent out your high-tier graphics card processing power to host decentralized video files and compute workloads.</div>
                 </div>
-                <a href="./grass/" class="env-btn">See Best Setup</a>
+                <a href="./home-internet/" class="env-btn">See Best Setup</a>
             </div>
         </div>
 
@@ -276,6 +270,8 @@
                     <tr>
                         <td><strong>#5</strong></td>
                         <td>Wicrypt ($WNT)</td>
-                        <td><span class="badge red">🚨 Volatile</span></td>
+                        <td><span class="badge badge-red">Volatile</span></td>
                         <td>~$250</td>
                         <td><span class="badge badge-red">🛑 Critical Trap</span></td>
+                        <td><a href="./grass/" class="table-link" style="color: var(--accent-red);">Read Warning &rarr;</a></td>
+
