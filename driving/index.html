@@ -6,12 +6,13 @@
     <title>Drive-to-Earn Matrix | DePIN Review</title>
     <style>
         :root {
-            --bg-color: #0b0f19;
-            --card-bg: #151d30;
-            --text-color: #f3f4f6;
-            --accent-green: #10b981;
-            --accent-blue: #3b82f6;
-            --border-color: #1e293b;
+            --bg-color: #ffffff;
+            --card-bg: #f8fafc;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --accent-green: #059669;
+            --accent-blue: #2563eb;
+            --border-color: #e2e8f0;
         }
 
         body {
@@ -26,11 +27,11 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
         }
 
         .back-link {
-            color: #9ca3af;
+            color: var(--text-muted);
             text-decoration: none;
             font-size: 0.9rem;
             display: inline-block;
@@ -42,18 +43,19 @@
         h1 {
             font-size: 2.2rem;
             margin-bottom: 0.5rem;
-            color: #fff;
+            color: #0f172a;
         }
 
         .subtitle {
-            color: #9ca3af;
+            color: var(--text-muted);
             font-size: 1.1rem;
             margin-bottom: 2rem;
         }
 
         .alert-box {
-            background-color: rgba(59, 130, 246, 0.1);
-            border: 1px solid var(--accent-blue);
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1e40af;
             border-radius: 8px;
             padding: 1rem;
             margin-bottom: 2rem;
@@ -80,11 +82,11 @@
         .project-name {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #fff;
+            color: #0f172a;
         }
 
         .badge {
-            background-color: rgba(16, 185, 129, 0.15);
+            background-color: #d1fae5;
             color: var(--accent-green);
             padding: 0.25rem 0.5rem;
             border-radius: 4px;
@@ -99,7 +101,7 @@
 
         .setup-steps li {
             margin-bottom: 0.5rem;
-            color: #d1d5db;
+            color: #334155;
         }
 
         .cta-btn {
@@ -114,12 +116,12 @@
             transition: background 0.2s;
         }
 
-        .cta-btn:hover { background-color: #2563eb; }
+        .cta-btn:hover { background-color: #1d4ed8; }
 
         footer {
             text-align: center;
             padding: 2rem 0;
-            color: #4b5563;
+            color: var(--text-muted);
             font-size: 0.85rem;
             margin-top: 3rem;
             border-top: 1px solid var(--border-color);
@@ -137,13 +139,12 @@
             <strong>💡 Data Audit Optimization Note:</strong> You do not need to buy separate tracking hardware devices. The applications reviewed below can run simultaneously in the background of a single smartphone without slowing down your navigation tools or consuming heavy cellular data.
         </div>
 
-        <!-- Project 1: Helium Mobile -->
         <div class="project-card">
             <div class="project-header">
                 <span class="project-name">1. Helium Mobile ($MOBILE)</span>
                 <span class="badge">Active Mapping Mode</span>
             </div>
-            <p style="color: #9ca3af; font-size: 0.95rem;">
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
                 Helium Mobile utilizes decentralized geospatial data mapping to verify network coverage. By keeping their app active in the background while you drive, you automatically build hex-mapping data metrics and unlock daily crypto distributions.
             </p>
             <ul class="setup-steps">
@@ -151,16 +152,15 @@
                 <li>Drive a minimum of a few blocks daily to trigger the automated verification milestones.</li>
                 <li>Earn rewards settled directly in native $MOBILE tokens.</li>
             </ul>
-            <a href="https://hellohelium.com" class="cta-btn" target="_blank">Activate Helium Mobile Mapping &rarr;</a>
+            <a href="../helium/" class="cta-btn">Read Helium Review & Setup &rarr;</a>
         </div>
 
-        <!-- Project 2: Nodle Network -->
         <div class="project-card">
             <div class="project-header">
                 <span class="project-name">2. Nodle Network ($NODL)</span>
                 <span class="badge">Bluetooth IoT Node Mode</span>
             </div>
-            <p style="color: #9ca3af; font-size: 0.95rem;">
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
                 Nodle transforms your moving vehicle into a dynamic smart-tracking node. As you drive through traffic, your smartphone securely connects via low-energy Bluetooth (BLE) to nearby asset trackers, smart meters, and lost tags, securing the physical web.
             </p>
             <ul class="setup-steps">
@@ -168,13 +168,13 @@
                 <li>The zkSync Layer-2 architecture processes transactions at near-zero fees.</li>
                 <li>Tokens accumulate automatically as you pass through high-density urban areas.</li>
             </ul>
-            <a href="https://nodle.com" class="cta-btn" target="_blank">Deploy Free Nodle Smartphone Node &rarr;</a>
+            <a href="../nodle/" class="cta-btn">Read Nodle Review & Setup &rarr;</a>
         </div>
 
         <footer>
             &copy; 2026 DePIN.review. Vetted infrastructure testing cells. 
             <br>
-            <span style="font-size: 0.75rem; color: #4b5563;">Disclaimer: We feature direct referral links to help fund our independent code auditing pipelines.</span>
+            <span style="font-size: 0.75rem; color: #64748b;">Disclaimer: We feature direct referral links to help fund our independent code auditing pipelines.</span>
         </footer>
     </div>
 
